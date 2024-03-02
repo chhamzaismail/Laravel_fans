@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +15,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('generate', function (){
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+      // \Illuminate\Support\Facades\Artisan::call('cache:clear');
+      // \Illuminate\Support\Facades\Artisan::call('config:clear');
+      // echo 'ok';exit;
+  });
+  
+// Route::get('/admin', function () { 
+//     return view('auth.login');
+// });
+
+Route::get('/lock_screen', [HomeController::class, 'lockscreen'])->name('lockscreen');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
