@@ -22,11 +22,11 @@ Route::get('generate', function (){
       // echo 'ok';exit;
   });
   
-// Route::get('/admin', function () { 
-//     return view('auth.login');
-// });
+Route::get('/admin', function () { 
+    return view('auth.login');
+});
 
-Route::get('/lock_screen', [HomeController::class, 'lockscreen'])->name('lockscreen');
+Route::get('/logout', [HomeController::class, 'logout'])->name('logout');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

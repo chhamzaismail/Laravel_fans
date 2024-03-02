@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function lockscreen(){
-        return view('admin.auth-lock-screen');
+    public function logout(){
+        return view('admin.auth-logout');
     }
 }

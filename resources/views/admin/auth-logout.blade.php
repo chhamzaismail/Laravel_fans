@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Log Out | Minia - Minimal Admin & Dashboard Template</title>
+        <title>Log Out | Fan</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -35,7 +35,7 @@
                                 <div class="d-flex flex-column h-100">
                                     <div class="mb-4 mb-md-5 text-center">
                                         <a href="index.html" class="d-block auth-logo">
-                                            <img src="assets/images/logo-sm.svg" alt="" height="28"> <span class="logo-txt">Minia</span>
+                                            <img src="assets/images/logo-sm.svg" alt="" height="28"> <span class="logo-txt">Fan</span>
                                         </a>
                                     </div>
                                     <div class="auth-content my-auto">
@@ -48,20 +48,20 @@
 
                                             <div class="mt-4 pt-2">
                                                 <h5>You are Logged Out</h5>
-                                                <p class="text-muted font-size-15">Thank you for using <span class="fw-semibold text-dark">Minia</span></p>
+                                                <p class="text-muted font-size-15">Thank you for using <span class="fw-semibold text-dark">Fan</span></p>
                                                 <div class="mt-4">
-                                                    <a href="auth-login.html" class="btn btn-primary w-100 waves-effect waves-light">Sign In</a>
+                                                    <a href="{{url('/admin')}}" class="btn btn-primary w-100 waves-effect waves-light">Sign In</a>
                                                 </div>
                                             </div>
                                         </div>
                                     
-                                        <div class="mt-5 text-center">
+                                        <!-- <div class="mt-5 text-center">
                                             <p class="text-muted mb-0">Don't have an account ? <a href="auth-register.html"
                                                     class="text-primary fw-semibold"> Signup</a> </p>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="mt-4 mt-md-5 text-center">
-                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Minia   . Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> FAN   . Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
                                     </div>
                                 </div>
                             </div>
